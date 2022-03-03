@@ -1,0 +1,5 @@
+package br.com.imc.util;
+
+public class BancoDeDados {
+
+}

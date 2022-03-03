@@ -1,0 +1,33 @@
+package teste;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class teste {
+
+	
+	public static void main(String[] args) {
+		
+		
+		int[] nota = new int[4];
+		
+		
+		List<Boolean> lista = new ArrayList<>();
+		
+		lista.add(true);
+		
+		System.out.println(lista.get(0));
+		
+		lista.add(Boolean.parseBoolean("FalSe"));
+		
+		System.out.println(lista.get(1));
+		
+		lista.add(Boolean.TRUE);
+		
+		System.out.println(lista.size());
+		
+		
+	
+	}
+}

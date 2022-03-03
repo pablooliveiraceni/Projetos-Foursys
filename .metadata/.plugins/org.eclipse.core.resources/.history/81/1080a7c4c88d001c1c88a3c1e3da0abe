@@ -1,0 +1,85 @@
+package teste;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+
+import br.com.imc.util.Util;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		 
+		  // Escrita 
+		   OutputStream fos = new FileOutputStream("lorem.txt");
+           Writer osw = new OutputStreamWriter(fos);
+           BufferedWriter bw = new BufferedWriter(osw);
+           
+           // Leitura 
+           FileInputStream fis = new FileInputStream("lorem.txt");
+			 InputStreamReader isr = new InputStreamReader(fis);
+			 BufferedReader br = new BufferedReader(isr);
+		
+		
+		int opcao = Util.lerInt("Informe a opção que deseja realizar \n 1 - Cadastrar pessoa e calcular imc \n 2 - exibir registro de todas as Pessoas e Imc 4 - Sair ");
+		
+		
+		while(opcao != 3) {
+			
+		}
+		
+		if (opcao == 1) {
+			
+			PessoaBO pessoaBO = new PessoaBO();
+			
+			String nome = Util.lerString("Informe o nome");
+			double altura = Util.lerDouble("Informe a altura");
+			int idade = Util.lerInt("Informe a idade");
+			double peso = Util.lerDouble("Informe o peso");
+			
+			Pessoa p = pessoaBO.cadastrarPessoa(nome, altura, idade, peso);
+			pessoaBO.calcularIMC();
+			
+		
+	           
+	           bw.newLine();
+	           bw.write(p.getNome() + " | Imc: " + p.getImc());
+	           
+	           bw.flush();
+	         
+
+		} else if(opcao == 2) {
+			
+			
+			 
+			 String linha = br.readLine();
+			 
+			 while(linha != null) {
+				 
+				 System.out.println(linha);
+			 }
+			
+			
+		} else if(opcao == 3) {
+			
+			System.out.println("Obrigado por utilizar o sistema");
+			
+			br.close();
+			bw.close();
+			
+			
+			
+		} else {
+			System.out.println("Opção invalida, tente novamente");
+		}
+			
+
+	}
+
+}

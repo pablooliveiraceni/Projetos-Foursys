@@ -1,0 +1,16 @@
+package br.com.imc.util;
+
+import java.util.Scanner;
+
+public class Util {
+	
+	
+	public static int letInt(String texto) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println(texto);
+		return  scanner.nextInt();
+	}
+	
+
+
+}

@@ -1,0 +1,31 @@
+package teste;
+
+import java.util.Scanner;
+
+public class teste {
+
+	
+	public static void main(String[] args) {
+		
+		System.out.println(!teste());
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Informe uma mensagem");
+		
+		String Ola = scanner.nextLine();
+	
+		System.out.println(testeString().equals(Ola));
+	
+	}
+	
+	public static boolean teste() {
+		
+		return true;
+	}
+	
+	public static String testeString() {
+		
+		return "Olá";
+	}
+}

@@ -1,0 +1,9 @@
+package teste;
+
+public class ExecaoImc extends RuntimeException {
+	
+	public ExecaoImc(String msg) {
+		super(msg);
+	}
+
+}

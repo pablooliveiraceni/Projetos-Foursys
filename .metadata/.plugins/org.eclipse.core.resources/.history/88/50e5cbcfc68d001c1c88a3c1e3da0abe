@@ -1,0 +1,33 @@
+package teste;
+
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+
+public class PessoaBO {
+	
+	private Pessoa pessoa;
+	
+	
+	public void cadastrarPessoa(String nome, double altura,  int idade, double peso) {
+		
+		pessoa = new Pessoa();
+		
+		pessoa.setNome(nome);
+		pessoa.setAltura(altura);
+		pessoa.setIdade(idade);
+		pessoa.setPeso(peso);
+		
+	}
+	
+	public void calcularIMC(){
+		
+		 double imc = pessoa.getPeso() / pessoa.getAltura() * pessoa.getAltura();
+		 pessoa.setImc(imc);
+		 
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;br.com.projetoNext.beans&apos; to &apos;Next/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;projetoNext&apos;&#x0D;&#x0A;- Destination element: &apos;Next/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;projetoNext/src/br.com.projetoNext.beans&apos;" description="Copy package" destination="=Next/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src&lt;br.com.projetoNext.beans" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1643046209342" version="1.0"/>
+</session>
